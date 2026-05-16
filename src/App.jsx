@@ -205,9 +205,9 @@ function App() {
         <div className="lg:hidden mb-2">
           <img src="/Sara Aviation Logo White Orange.png" alt="Sara Aviation" className="max-w-[160px]" />
         </div>
-        <a href="tel:+919876543210" className="flex items-center gap-2 lg:gap-1.5 text-white no-underline hover:text-secondary-blue transition-colors">
+        <a href="tel:+919187250470" className="flex items-center gap-2 lg:gap-1.5 text-white no-underline hover:text-secondary-blue transition-colors">
           <Phone className="text-secondary-blue w-[16px] h-[16px] lg:w-[14px] lg:h-[14px]" />
-          +91 98765 43210
+          +91 91872 50470
         </a>
         <div className="hidden sm:block w-px h-3 bg-white/30"></div>
         <a href="https://www.saraaviation.in/" className="flex items-center gap-2 lg:gap-1.5 text-white no-underline hover:text-secondary-blue transition-colors">
