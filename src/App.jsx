@@ -217,7 +217,7 @@ function App() {
         <div className="hidden sm:block w-px h-3 bg-white/30"></div>
         <div className="flex items-center gap-2 lg:gap-1.5">
           <MapPin className="text-secondary-blue w-[16px] h-[16px] lg:w-[14px] lg:h-[14px]" />
-          Your Career. Our Commitment.
+          Your Career. Our Commitment..!
         </div>
         <div className="w-full sm:w-auto flex justify-center lg:justify-start lg:ml-0">
           <a 
