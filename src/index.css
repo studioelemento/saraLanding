@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&family=Caveat:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-airplane-path {
+    position: relative;
+  }
+  .bg-airplane-path::before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    right: -10%;
+    width: 120%;
+    height: 90%;
+    border: 1px dashed rgba(255,255,255,0.15);
+    border-radius: 50%;
+    transform: rotate(-15deg);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .bg-airplane-path > * {
+    z-index: 1;
+    position: relative;
+  }
+  
+  .bg-bottom-curve {
+    position: relative;
+  }
+  .bg-bottom-curve::after {
+    content: '';
+    position: absolute;
+    bottom: -80px;
+    right: -80px;
+    width: 250px;
+    height: 250px;
+    background: #F4B41A;
+    border-radius: 50%;
+    z-index: 5;
+    opacity: 0.95;
+    box-shadow: -30px -10px 0 0 #0056b3;
+    pointer-events: none;
+    display: none; /* Hidden on mobile by default */
+  }
+
+  @media (min-width: 1024px) {
+    .bg-bottom-curve::after {
+      display: block; /* Show on desktop */
+    }
+  }
+
+  .hero-bg-responsive {
+    background-image: linear-gradient(to top, rgba(0,43,91,0.6) 0%, rgba(0,43,91,0) 40%), url('/mobileViewhero.png');
+  }
+
+  @media (min-width: 1024px) {
+    .hero-bg-responsive {
+      background-image: linear-gradient(to right, rgba(0,43,91,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,43,91,0.9) 100%), 
+                        linear-gradient(to top, #002B5B 0%, rgba(0,43,91,0) 40%), 
+                        url('/Cabin Crew welcoming image for contact page.png');
+    }
+  }
+}
