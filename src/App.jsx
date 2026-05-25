@@ -64,14 +64,15 @@ function App() {
       <div className="flex flex-col lg:flex-row flex-1 relative z-10 lg:min-h-0">
         <div className="w-full lg:flex-1 hero-bg-responsive bg-cover bg-center lg:bg-[center_left] relative flex flex-col justify-start lg:justify-end pt-[400px] pb-8 px-6 lg:py-4 lg:px-10 text-white min-h-[700px] lg:min-h-0">
           <div className="mb-4 lg:mb-2 max-w-[500px] mt-20 lg:mt-0 relative z-10 ">
+            <h1 className='text-white text-[1.2rem] lg:text-[1.05rem] xl:text-[1.1rem] font-semibold mb-0 tracking-wide pb-2'>Calling 12th Pass and Graduates</h1>
             <h1 className="font-outfit text-[2rem] sm:text-[2.4rem] lg:text-[2.2rem] xl:text-[2.6rem] font-extrabold leading-[1.2] lg:leading-[1.1] mb-1 uppercase tracking-wide drop-shadow-md">
               TAKE OFF TOWARDS YOUR
             </h1>
             <div className="font-caveat text-[3.2rem] sm:text-[3.8rem] lg:text-[3.2rem] xl:text-[3.8rem] text-accent-gold leading-[1] lg:leading-[0.9] mb-2 lg:mb-1 -ml-1 drop-shadow-md">
               Dream Career
             </div>
-            <p className="text-[0.9rem] lg:text-[0.85rem] leading-snug opacity-95 max-w-[450px]">
-              Join our Cabin Crew & Ground Staff Courses and step into the world of opportunities.
+            <p className="text-[0.8rem] lg:text-[0.85rem] leading-snug opacity-95 max-w-[450px]">
+             Join our Cabin Crew & Ground Staff, Commercial Pilot Courses and step into the world of opportunities.
             </p>
           </div>
 
