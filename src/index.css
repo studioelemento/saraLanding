@@ -60,6 +60,7 @@
       background-image: linear-gradient(to right, rgba(0,43,91,0.2) 0%, rgba(0,0,0,0) 30%, rgba(0,43,91,0.9) 100%), 
                         linear-gradient(to top, #002B5B 0%, rgba(0,43,91,0) 40%), 
                         url('/Cabin Crew welcoming image for contact page.png');
+      background-position: left top 25% !important;
     }
   }
 }

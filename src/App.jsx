@@ -96,7 +96,7 @@ function App() {
           </div>
         </div>
 
-        <div className="w-full lg:w-[580px] xl:w-[680px] bg-primary-blue bg-right-texture flex flex-col items-center justify-center py-10 px-4 sm:px-12 lg:py-5 lg:pl-6 lg:pr-20 xl:pl-8 xl:pr-32 relative z-10 shadow-none lg:shadow-[-20px_0_40px_rgba(0,0,0,0.3)] bg-airplane-path lg:-ml-32 xl:-ml-48 transition-all duration-500">
+        <div className="w-full lg:w-1/2 bg-primary-blue bg-right-texture flex flex-col items-center justify-center py-10 px-4 sm:px-12 lg:py-5 lg:px-10 xl:px-14 relative z-10 shadow-none lg:shadow-[-20px_0_40px_rgba(0,0,0,0.3)] bg-airplane-path transition-all duration-500">
           <div className="hidden lg:flex mb-4 lg:mb-2 text-center flex-col items-center">
             <img src="/Sara Aviation Logo White Orange.png" alt="Sara Aviation" className="max-w-[180px] lg:max-w-[140px] xl:max-w-[170px] mb-0.5" />
           </div>
