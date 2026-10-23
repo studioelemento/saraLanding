@@ -10,6 +10,7 @@ export default {
         'primary-blue': '#002B5B',
         'secondary-blue': '#007BFF',
         'accent-gold': '#F4B41A',
+        'accent': '#E47B24',
         'dark-footer': '#001A3D',
       },
       fontFamily: {

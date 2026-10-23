@@ -1,5 +1,6 @@
 import React from 'react';
 import { Plane, User, Briefcase, Globe, Phone, Mail, GraduationCap, MapPin, MessageSquare, Lock, Users } from 'lucide-react';
+import AviationCourses from './components/AviationCourses';
 import './index.css';
 
 function App() {
@@ -60,8 +61,8 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col min-h-screen lg:h-screen lg:overflow-hidden overflow-x-hidden font-sans bg-primary-blue text-gray-800 bg-bottom-curve relative">
-      <div className="flex flex-col lg:flex-row flex-1 relative z-10 lg:min-h-0">
+    <div className="flex flex-col min-h-screen overflow-x-hidden font-sans bg-primary-blue text-gray-800 relative">
+      <div className="flex flex-col lg:flex-row min-h-screen lg:min-h-[680px] relative z-10 bg-bottom-curve">
         <div className="w-full lg:flex-1 hero-bg-responsive bg-cover bg-center lg:bg-[center_left] relative flex flex-col justify-start lg:justify-end pt-[400px] pb-8 px-6 lg:py-4 lg:px-10 text-white min-h-[700px] lg:min-h-0">
           <div className="mb-4 lg:mb-2 max-w-[500px] mt-20 lg:mt-0 relative z-10 ">
             <h1 className='text-white text-[1.2rem] lg:text-[1.05rem] xl:text-[1.1rem] font-semibold mb-0 tracking-wide pb-2'>Calling 12th Pass and Graduates</h1>
@@ -110,7 +111,7 @@ function App() {
             </p>
           </div>
 
-          <div className="bg-white rounded-xl py-6 px-8 lg:py-4 lg:px-7 w-full shadow-[0_15px_35px_rgba(0,0,0,0.4)]">
+          <div id="enquiry-form-card" className="bg-white rounded-xl py-6 px-8 lg:py-4 lg:px-7 w-full shadow-[0_15px_35px_rgba(0,0,0,0.4)] scroll-mt-6">
             {!isSubmitted ? (
               <>
                 <div className="text-center mb-4 lg:mb-2">
@@ -202,32 +203,38 @@ function App() {
         </div>
       </div>
 
-      <footer className="bg-primary-blue lg:bg-transparent text-white pt-6 pb-2 px-6 lg:py-2 lg:px-8 xl:px-12 flex flex-col sm:flex-row justify-center lg:justify-start gap-4 lg:gap-8 items-center text-[0.85rem] lg:text-[0.75rem] border-t border-white/10 relative z-20">
-        <div className="lg:hidden mb-2">
-          <img src="/Sara Aviation Logo White Orange.png" alt="Sara Aviation" className="max-w-[160px]" />
+      {/* Aviation Courses & About Section */}
+      <AviationCourses onSelectCourse={(selectedCourse) => {
+        setFormData(prev => ({ ...prev, course: selectedCourse }));
+      }} />
+
+      <footer className="bg-dark-footer text-white py-8 px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[0.85rem] border-t border-white/10 relative z-20">
+        <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+          <img src="/Sara Aviation Logo White Orange.png" alt="Sara Aviation" className="max-w-[150px]" />
+          <span className="hidden sm:inline text-white/20">|</span>
+          <p className="text-white/60 text-xs">Your Career. Our Commitment..!</p>
         </div>
-        <a href="tel:+919187250470" className="flex items-center gap-2 lg:gap-1.5 text-white no-underline hover:text-secondary-blue transition-colors">
-          <Phone className="text-secondary-blue w-[16px] h-[16px] lg:w-[14px] lg:h-[14px]" />
-          +91 91872 50470
-        </a>
-        <div className="hidden sm:block w-px h-3 bg-white/30"></div>
-        <a href="https://www.saraaviation.in/" className="flex items-center gap-2 lg:gap-1.5 text-white no-underline hover:text-secondary-blue transition-colors">
-          <Globe className="text-secondary-blue w-[16px] h-[16px] lg:w-[14px] lg:h-[14px]" />
-          www.saraaviation.in
-        </a>
-        <div className="hidden sm:block w-px h-3 bg-white/30"></div>
-        <div className="flex items-center gap-2 lg:gap-1.5">
-          <MapPin className="text-secondary-blue w-[16px] h-[16px] lg:w-[14px] lg:h-[14px]" />
-          Your Career. Our Commitment..!
+
+        <div className="flex flex-wrap items-center justify-center gap-6 text-white/90 text-sm">
+          <a href="tel:+919187250470" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <Phone className="text-accent w-4 h-4" />
+            +91 91872 50470
+          </a>
+          <span className="hidden sm:inline text-white/30">•</span>
+          <a href="https://www.saraaviation.in/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-accent transition-colors">
+            <Globe className="text-accent w-4 h-4" />
+            www.saraaviation.in
+          </a>
         </div>
-        <div className="w-full sm:w-auto flex justify-center lg:justify-start lg:ml-0">
+
+        <div>
           <a 
             href="https://saraaviation.in" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="inline-flex items-center justify-center gap-2 bg-accent-gold text-primary-blue px-5 py-2 rounded-full font-bold text-[0.8rem] lg:text-[0.7rem] hover:bg-white hover:shadow-md transition-all active:scale-95 shadow-sm uppercase tracking-wider"
+            className="inline-flex items-center justify-center gap-2 bg-accent text-white px-5 py-2.5 rounded-full font-bold text-xs hover:bg-orange-600 transition-all active:scale-95 shadow-md uppercase tracking-wider"
           >
-            Visit Our Website
+            Visit Official Website
           </a>
         </div>
       </footer>
