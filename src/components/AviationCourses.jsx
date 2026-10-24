@@ -4,7 +4,7 @@ export const courses = [
   {
     id: 1,
     title: "Sara Diploma Course in Aviation, Hospitality and Travel Management",
-    formValue: "Diploma Course in Aviation, Hospitality and Travel Management",
+    formValue: "Sara Diploma Course in Aviation, Hospitality and Travel Management",
     duration: "Duration: 12 Months, 5 days/week (Mon-Fri) 2 hours",
   },
   {

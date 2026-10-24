@@ -1,6 +1,7 @@
 import React from 'react';
 import { Plane, User, Briefcase, Globe, Phone, Mail, GraduationCap, MapPin, MessageSquare, Lock, Users } from 'lucide-react';
 import AviationCourses from './components/AviationCourses';
+import TopAirlines from './components/TopAirlines';
 import './index.css';
 
 function App() {
@@ -141,7 +142,7 @@ function App() {
                     <GraduationCap className="absolute left-3 top-3 lg:top-2.5 text-gray-400 w-[15px] h-[15px] pointer-events-none" />
                     <select name="course" value={formData.course} onChange={handleChange} required className="w-full py-2.5 lg:py-2 pr-3 pl-9 border border-gray-200 rounded-md text-[0.95rem] lg:text-[0.85rem] outline-none transition-all duration-300 text-gray-500 appearance-none focus:border-secondary-blue focus:ring-2 focus:ring-secondary-blue/10">
                       <option value="" disabled>Select Course</option>
-                      <option value="Diploma Course in Aviation, Hospitality and Travel Management">Diploma Course in Aviation, Hospitality and Travel Management</option>
+                      <option value="Sara Diploma Course in Aviation, Hospitality and Travel Management">Sara Diploma Course in Aviation, Hospitality and Travel Management</option>
                       <option value="PG Diploma Course in Aviation, Hospitality and Travel Management">PG Diploma Course in Aviation, Hospitality and Travel Management</option>
                       <option value="Foundation in Travel & Tourism with Amadeus">Foundation in Travel & Tourism with Amadeus</option>
                       <option value="Airport Operations Fundamentals">Airport Operations Fundamentals</option>
@@ -207,6 +208,9 @@ function App() {
       <AviationCourses onSelectCourse={(selectedCourse) => {
         setFormData(prev => ({ ...prev, course: selectedCourse }));
       }} />
+
+      {/* Careers Take Off with Top Airlines Section */}
+      <TopAirlines />
 
       <footer className="bg-dark-footer text-white py-8 px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-6 text-[0.85rem] border-t border-white/10 relative z-20">
         <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
